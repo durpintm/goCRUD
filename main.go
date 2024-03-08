@@ -100,7 +100,7 @@ func getApiDocumentationHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	var info = Info{
 			StudentId: "500217688", 
-			GithubRepo: "Repo Name",
+			GithubRepo: "https://github.com/durpintm/goCRUD",
 	}
 
 	json.NewEncoder(w).Encode(info)
